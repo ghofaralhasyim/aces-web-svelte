@@ -1,0 +1,21 @@
+.label {
+  display: inline-block;
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 1px 12px 3px;
+
+  vertical-align: middle;
+
+  &:before,
+  > span {
+    vertical-align: middle;
+    display: inline-block;
+  }
+}
+
+@each $state, $color in $palettes {
+  .label-#{$state} {
+    @extend .label;
+    background-color: $color !important;
+  }
+}

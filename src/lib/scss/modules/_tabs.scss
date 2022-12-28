@@ -1,0 +1,45 @@
+@import '../partials/variables';
+
+.tabs {
+  &-bar {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #cdd3da;
+    flex-wrap: wrap;
+
+    @media #{$md} {
+      justify-content: flex-start;
+    }
+
+    &-item {
+      display: flex;
+      justify-content: center;
+      padding: 12px 6px;
+      color: #222;
+      border-bottom: 3px solid transparent;
+      @media #{$md} {
+        padding: 12px 40px;
+        column-gap: 12px;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+      &-active {
+        font-weight: bold;
+      }
+    }
+  }
+  &-content {
+    padding: 24px 12px;
+  }
+}
+.tabs--justify {
+  @extend .tabs-bar;
+  & > * {
+    flex-grow: 1;
+  }
+}

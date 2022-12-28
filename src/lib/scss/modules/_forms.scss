@@ -1,0 +1,37 @@
+.form-input {
+  padding: 8px;
+  border: solid 1px #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  background: #fff;
+  line-height: $base_line_height;
+  box-shadow: none;
+  font-weight: 400;
+
+  &:focus {
+    border-color: lighten($primary, 10%);
+    outline: none;
+  }
+
+  &[disabled] {
+    color: #a8a8a8;
+    -webkit-text-fill-color: #a8a8a8;
+    cursor: not-allowed;
+  }
+
+  &-error {
+    border-color: lighten($red, 10%);
+  }
+
+  @at-root select#{&} {
+    background-size: 10px;
+    padding-right: 32px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+}
+
+.form-input::-webkit-input-placeholder {
+  opacity: 0.5;
+}

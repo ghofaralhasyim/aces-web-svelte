@@ -1,0 +1,53 @@
+@font-face {
+	font-family: 'LibreBaskerville';
+	src: url('../fonts/LibreBaskerville-Regular.woff2') format('woff2'),
+		url('../fonts/LibreBaskerville-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'LibreBaskerville-Bold';
+	src: url('../fonts/LibreBaskerville-Bold.woff2') format('woff2'),
+		url('../fonts/LibreBaskerville-Bold.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'LibreBaskerville-Italic';
+	src: url('../fonts/LibreBaskerville-Italic.woff2') format('woff2'),
+		url('../fonts/LibreBaskerville-Italic.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SourceSansPro-Italic';
+	src: url('../fonts/SourceSansPro-Italic.woff2') format('woff2'),
+		url('../fonts/SourceSansPro-Italic.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SourceSansPro';
+	src: url('../fonts/SourceSansPro-Regular.woff2') format('woff2'),
+		url('../fonts/SourceSansPro-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SourceSansPro-Light';
+	src: url('../fonts/SourceSansPro-ExtraLight.woff2') format('woff2'),
+		url('../fonts/SourceSansPro-ExtraLight.woff') format('woff');
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+}

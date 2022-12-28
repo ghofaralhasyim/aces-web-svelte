@@ -1,0 +1,45 @@
+$base_px_font_size: 16;
+$base_font_size: $base_px_font_size * 1px;
+$font_serif: 'SourceSansPro', 'sans-serif';
+$base_font_family: $font_serif;
+$base_line_height: 1.6;
+
+$sm: 'screen and (min-width: 28em)';
+$md: 'screen and (min-width: 48em)';
+$large: 'screen and (min-width: 64em)';
+$xl: 'screen and (min-width: 75em)';
+
+// colors
+$palettes: (
+	'primary': #ff7a00,
+	'dark': #222222,
+	'yellow': #febc14,
+	'blue': #08a3fa,
+	'grey': #a9a9a9,
+	'green-pastel': #d3f3d8,
+	'orange-pastel': #ffc09f,
+	'light-grey': #f5f5f5,
+	'red': #ff0000
+);
+
+$light-palettes: (
+	'white': #fff
+);
+
+@function palette($color) {
+	@if map-has-key($palettes, $color) {
+		@return map-get($palettes, $color);
+	} @else if map-has-key($light-palettes, $color) {
+		@return map-get($light-palettes, $color);
+	} @else {
+		@warn "key `#{$color}` was not found. Falling back to #000";
+		@return #000;
+	}
+}
+
+$primary: palette('primary');
+$dark: palette('dark');
+$blue: palette('blue');
+$yellow: palette('yellow');
+$white: palette('white');
+$red: palette('red');
