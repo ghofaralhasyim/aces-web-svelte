@@ -1,11 +1,15 @@
-<a href="#" class="article-card flex flex-col shadow full-width text-black">
+<script lang="ts">
+	export let data: any;
+</script>
+
+<a href="/articles/{data.slug}" class="article-card flex flex-col  text-black">
 	<!-- svelte-ignore a11y-img-redundant-alt -->
-	<img src="images/default-image.jpg" alt="article-image" />
-	<span class="category">Lorem, ipsum.</span>
+	<img src={data.image} alt="article-image" />
+	<span class="category">{data.category.name}</span>
 	<div class="flex flex-col p-16">
-		<h6 class="title text-black m-0">Lorem ipsum dolor sit amet consectetur.</h6>
+		<h6 class="title text-black m-0">{data.title}</h6>
 		<p class="text-small preview-content">
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, possimus?
+			{data.excerpt}
 		</p>
 	</div>
 </a>
@@ -16,11 +20,20 @@
 		background: white;
 
 		box-shadow: 0px 8px 16px 5px rgba(159, 159, 159, 0.13);
-		min-height: 300px;
-		max-height: 300px;
+		min-height: 260px;
+		max-height: 260px;
+		min-width: 300px;
 		border-radius: 8px;
 
 		overflow: hidden;
+
+		@media #{$md} {
+			width: calc((100% / 2 - (12 * 1px)));
+		}
+
+		@media #{$large} {
+			width: calc((100% / 4 - (12 * 1px)));
+		}
 
 		.category {
 			position: absolute;
@@ -42,8 +55,8 @@
 		img {
 			object-fit: cover;
 			object-position: center center;
-			max-height: 160px;
-			min-height: 160px;
+			max-height: 180px;
+			min-height: 180px;
 		}
 	}
 
@@ -64,7 +77,6 @@
 		display: block;
 		overflow: hidden;
 		text-overflow: ellipsis;
-		max-height: 3.4em;
-		line-height: 1.6em;
+		white-space: nowrap;
 	}
 </style>
