@@ -5,6 +5,11 @@
 	import 'swiper/swiper.min.css';
 	import Accordion from '$lib/components/Accordion.svelte';
 
+	import dummyImage1 from '$lib/images/story-2.jpg';
+	import dummyImage2 from '$lib/images/dummy-image-2.jpg';
+	import dummyImage3 from '$lib/images/ACESDAY-2022-21.jpg';
+	import dummyImage4 from '$lib/images/DNF_0334.jpg';
+
 	export let data: PageData;
 	let announcement = [
 		{
@@ -25,16 +30,16 @@
 	];
 	const galery = [
 		{
-			image_url: './src/lib/images/story-2.jpg'
+			image_url: dummyImage1
 		},
 		{
-			image_url: 'images/dummy-image-2.jpg'
+			image_url: dummyImage2
 		},
 		{
-			image_url: './src/lib/images/ACESDAY-2022-21.jpg'
+			image_url: dummyImage3
 		},
 		{
-			image_url: './src/lib/images/DNF_0334.jpg'
+			image_url: dummyImage4
 		}
 	];
 	const faqs = [
