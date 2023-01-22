@@ -23,8 +23,7 @@ body {
 	background: #fff;
 }
 
-#app,
-.blank-layout {
+#app {
 	height: 100vh;
 	width: 100%;
 }
@@ -64,4 +63,28 @@ ul {
 	100% {
 		transform: rotate(360deg);
 	}
+}
+
+.header-no-shadow {
+	.site-header{
+		border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+		box-shadow: none !important;
+	}
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

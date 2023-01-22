@@ -11,11 +11,12 @@ $xl: 'screen and (min-width: 75em)';
 
 // colors
 $palettes: (
-	'primary': #ff7a00,
-	'dark': #222222,
+	'primary': #ff7315,
+	'dark': #232020,
 	'yellow': #febc14,
 	'blue': #08a3fa,
-	'grey': #a9a9a9,
+	'grey': #f9f9f9,
+	'dark-grey': #626262,
 	'green-pastel': #d3f3d8,
 	'orange-pastel': #ffc09f,
 	'light-grey': #f5f5f5,
@@ -39,7 +40,9 @@ $light-palettes: (
 
 $primary: palette('primary');
 $dark: palette('dark');
+$darkGrey: palette('dark-grey');
 $blue: palette('blue');
 $yellow: palette('yellow');
 $white: palette('white');
 $red: palette('red');
+$grey: palette('grey');
