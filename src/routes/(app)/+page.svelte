@@ -74,7 +74,7 @@
 					</p>
 
 					<div class="mt-32">
-						<a href="/" class="btn-dark">Sampaikan Aspirasimu</a>
+						<a href="/aspiration/submit" class="btn-dark">Sampaikan Aspirasimu</a>
 					</div>
 				</div>
 				<div class="hero-right fg-1">
