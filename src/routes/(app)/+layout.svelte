@@ -1,6 +1,7 @@
 <script>
-	import '../lib/scss/main.scss';
-	import Header from '../components/Header.svelte';
+	import '$lib/scss/main.scss';
+	import Header from '$lib/components/Header.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 </script>
 
 <div id="app" class="sticky-footer-container">
@@ -11,7 +12,7 @@
 		<slot />
 	</main>
 	<div class="sticky-footer-container-item">
-		<footer />
+		<Footer />
 	</div>
 </div>
 
