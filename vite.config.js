@@ -1,4 +1,5 @@
 import { sveltekit } from '@sveltejs/kit/vite';
+import 'dotenv/config';
 
 /** @type {import('vite').UserConfig} */
 const config = {
@@ -7,9 +8,9 @@ const config = {
 		preprocessorOptions: {
 			scss: {
 				additionalData: `@import "./src/lib/scss/partials/variables";`
-			},
-		},
-	},
+			}
+		}
+	}
 };
 
 export default config;
