@@ -9,21 +9,22 @@
 	import dummyImage2 from '$lib/images/dummy-image-2.jpg';
 	import dummyImage3 from '$lib/images/ACESDAY-2022-21.jpg';
 	import dummyImage4 from '$lib/images/DNF_0334.jpg';
+	import landingImage1 from '$lib/images/mail-box-3d-shadow.png';
 
 	export let data: PageData;
 	let announcement = [
 		{
-			image_url: 'images/undraw_online_wishes_dlmr.png',
+			image_url: '/images/undraw_online_wishes_dlmr.png',
 			title: 'Happy Graduation',
 			description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, laboriosam.'
 		},
 		{
-			image_url: 'images/undraw_online_wishes_dlmr.png',
+			image_url: '/images/undraw_online_wishes_dlmr.png',
 			title: 'Happy Graduation',
 			description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, laboriosam.'
 		},
 		{
-			image_url: 'images/undraw_online_wishes_dlmr.png',
+			image_url: '/images/undraw_online_wishes_dlmr.png',
 			title: 'Happy Graduation',
 			description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, laboriosam.'
 		}
@@ -77,14 +78,14 @@
 					</div>
 				</div>
 				<div class="hero-right fg-1">
-					<img src="images/mail-box-3d-shadow.png" alt="" />
+					<img src={landingImage1} alt="" loading="lazy" />
 				</div>
 			</div>
 			<div class="message">
 				{#each announcement as item}
 					<div class="item flex flex-row col-gap-12">
 						<div class="image">
-							<img src="images/dummy-image-2.jpg" alt="" />
+							<img src={dummyImage2} alt="" loading="lazy" />
 						</div>
 						<div class="flex flex-col">
 							{#if item.title}
@@ -109,15 +110,15 @@
 		</div>
 		<div class="grid galery">
 			<div class="grid_column galery-item" data-col="s12,m6,l4">
-				<img src={galery[0].image_url} alt="" />
+				<img src={galery[0].image_url} alt="" loading="lazy" />
 			</div>
 			<div class="grid_column flex flex-col row-gap-12 galery-item" data-col="s12,m6,l8">
 				<div class="fg-1 flex flex-row col-gap-12">
 					<div class="fg-1">
-						<img src={galery[3].image_url} alt="" />
+						<img src={galery[3].image_url} alt="" loading="lazy" />
 					</div>
 					<div class="fg-1">
-						<img src={galery[2].image_url} alt="" />
+						<img src={galery[2].image_url} alt="" loading="lazy" />
 					</div>
 				</div>
 				<div class="fg-1 full-width">
@@ -152,7 +153,7 @@
 							<SwiperSlide>
 								<div class="item">
 									<div class="image">
-										<img src={labs.image} alt="" />
+										<img src={labs.image} alt="" loading="lazy" />
 									</div>
 									<h5>{labs.title}</h5>
 									<p>{@html labs.excerpt}</p>
