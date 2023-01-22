@@ -60,12 +60,12 @@ $GRID_XL: 75 * 1em !default;
 }
 
 @media screen and (min-width: #{$GRID_LARGE}) {
-	.grid_column[col*='l'] {
+	.grid_column[data-col*='l'] {
 		margin-left: 0;
 	}
 
 	@for $i from 1 through $GRID_COUNT {
-		.grid_column[col*='l#{$i}'] {
+		.grid_column[data-col*='l#{$i}'] {
 			width: gridSize($i);
 		}
 
@@ -76,12 +76,12 @@ $GRID_XL: 75 * 1em !default;
 }
 
 @media screen and (min-width: #{$GRID_XL}) {
-	.grid_column[col*='x'] {
+	.grid_column[data-col*='x'] {
 		margin-left: 0;
 	}
 
 	@for $i from 1 through $GRID_COUNT {
-		.grid_column[col*='x#{$i}'] {
+		.grid_column[data-col*='x#{$i}'] {
 			width: gridSize($i);
 		}
 

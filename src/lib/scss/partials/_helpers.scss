@@ -55,6 +55,12 @@ $cursorStyle: 'pointer', 'grab', 'grabbing', 'move', 'zoom-in', 'zoom-out';
 $sizes: 0, 2, 4, 8, 12, 16, 18, 20, 24, 32, 36, 48, 64;
 
 @each $size in $sizes {
+  .border-radius-#{$size} {
+    border-radius: #{$size}px !important;
+  }
+}
+
+@each $size in $sizes {
   .f-#{$size} {
     font-size: #{$size}px !important;
   }
@@ -159,3 +165,13 @@ $sizes: 0, 2, 4, 8, 12, 16, 18, 20, 24, 32, 36, 48, 64;
 .relative {
   position: relative;
 }
+
+.d-none {
+  display: none;
+}
+
+.accordion-active {
+		.accordion-content {
+			display: block !important;
+		}
+	}
